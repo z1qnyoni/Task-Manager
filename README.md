@@ -30,12 +30,12 @@ This application allows users to register, create, edit, and delete tasks with a
 Install dependencies:
 
 bash
-Копировать
+
 composer install
 Copy .env.example to .env and configure your database settings:
 
 dotenv
-Копировать
+
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -45,12 +45,12 @@ DB_PASSWORD=1234
 Generate the application key: base64:vzJUlgq3krdGJnPY+1d/fmsQCCnAgKsAzFzEScui2Q8=
 
 bash
-Копировать
+
 php artisan key:generate
 Run database migrations:
 
 bash
-Копировать
+
 php artisan migrate
 (Optional) Start the local development server:
 
@@ -67,7 +67,7 @@ Use the Dashboard to create and manage your tasks.
 API Endpoint to get tasks:
 
 bash
-Копировать
+
 GET /api/tasks
 Returns the authenticated user’s tasks in JSON format. Authentication is required.
 
@@ -75,7 +75,7 @@ API Authentication
 The API is secured using Laravel Sanctum. Obtain an access token and include it in your request headers:
 
 css
-Копировать
+
 Authorization: Bearer {your_token}
 Technologies Used
 Laravel 10
