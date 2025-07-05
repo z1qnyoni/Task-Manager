@@ -1,90 +1,110 @@
 # Task Manager
 
-A simple task management web application built with Laravel.
+A modern and user-friendly task management system built with Laravel.  
+Manage your tasks with ease: registration, authentication, CRUD operations, dashboard statistics, and a JSON API.
 
-## Description
+---
 
-This application allows users to register, create, edit, and delete tasks with a title, deadline, and status. It also provides an API endpoint to retrieve the user’s tasks in JSON format.
+## 🚀 Features
 
-## Features
+- **User registration and authentication**
+- **Create, view, edit, and delete tasks**
+- **Each task has a title, deadline, and status (`jauns`, `procesā`, `pabeigts`)**
+- **Modern dashboard with cards and statistics**
+- **API endpoint to get tasks in JSON format**
+- **Secure authentication with Laravel Sanctum**
+- **Validation and authorization via Policy**
 
-- User registration and authentication
-- CRUD operations for tasks (Create, Read, Update, Delete)
-- Responsive web interface with Bootstrap 5
-- Date picker with Flatpickr
-- API endpoint `/api/tasks` to get the authenticated user’s tasks as JSON
+---
 
-## Requirements
+## 🛠️ Installation
 
-- PHP >= 8.1
-- Composer
-- Laravel 10
-- MySQL or any supported database
-
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/task-manager.git
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/YOUR_USERNAME/task-manager.git
    cd task-manager
-Install dependencies:
+   ```
 
-bash
+2. **Install dependencies:**
+   ```sh
+   composer install
+   npm install
+   ```
 
-composer install
-Copy .env.example to .env and configure your database settings:
+3. **Copy the .env file and generate an app key:**
+   ```sh
+   cp .env.example .env
+   php artisan key:generate
+   ```
 
-dotenv
+4. **Configure your database settings in `.env`**
 
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=todo_db
-DB_USERNAME=root
-DB_PASSWORD=1234
-Generate the application key: base64:vzJUlgq3krdGJnPY+1d/fmsQCCnAgKsAzFzEScui2Q8=
+5. **Run migrations:**
+   ```sh
+   php artisan migrate
+   ```
 
-bash
+6. **Start the development server:**
+   ```sh
+   php artisan serve
+   ```
 
-php artisan key:generate
-Run database migrations:
+7. **(Optional) Build frontend assets:**
+   ```sh
+   npm run dev
+   ```
 
-bash
+---
 
-php artisan migrate
-(Optional) Start the local development server:
+## 📦 API
 
-bash
-Копировать
-php artisan serve
-The app will be available at http://127.0.0.1:8000
+- **Get user tasks (requires authentication):**
+  ```
+  GET /api/tasks
+  Headers: Authorization: Bearer {token}
+  ```
 
-Usage
-Visit the homepage to register or login.
+- **Sample response:**
+  ```json
+  {
+    "success": true,
+    "data": [
+      {
+        "id": 1,
+        "title": "Test",
+        "deadline": "2025-01-01",
+        "status": "jauns",
+        "user_id": 1,
+        "created_at": "...",
+        "updated_at": "..."
+      }
+    ]
+  }
+  ```
 
-Use the Dashboard to create and manage your tasks.
+---
 
-API Endpoint to get tasks:
+## 🖥️ Screenshots
 
-bash
+![image](https://github.com/user-attachments/assets/b2f05253-9ce4-4891-aa0a-804e62a7556d)
 
-GET /api/tasks
-Returns the authenticated user’s tasks in JSON format. Authentication is required.
 
-API Authentication
-The API is secured using Laravel Sanctum. Obtain an access token and include it in your request headers:
+---
 
-css
 
-Authorization: Bearer {your_token}
-Technologies Used
-Laravel 10
+---
 
-Bootstrap 5
+## 📄 License
 
-Flatpickr (date picker)
+MIT
 
-Laravel Sanctum (API authentication)
+---
 
-License
-MIT License
+## 💡 Notes
+
+- Uses Laravel Sanctum for API authentication.
+- UI built with Bootstrap 5 and Bootstrap Icons.
+- Date selection via Flatpickr.
+- PHPUnit for testing.
+
+---
