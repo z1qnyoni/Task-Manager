@@ -18,7 +18,7 @@ class DashboardController extends Controller
         $stats = [
             'new' => $tasks->where('status', 'jauns')->count(),
             'in_progress' => $tasks->where('status', 'procesā')->count(),
-            'completed' => $tasks->where('status', 'pabeigts')->count(),
+            'completed' => $tasks->where('status', 'Pabeigts')->count(),
             'total' => $tasks->count(),
         ];
         $stats['completion_rate'] = $stats['total'] > 0
