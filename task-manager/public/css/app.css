@@ -1,0 +1,177 @@
+body.dark-mode {
+    background-color: #181a1b !important;
+    color: #e0e0e0 !important;
+}
+body.dark-mode .card,
+body.dark-mode .navbar,
+body.dark-mode .bg-white {
+    background-color: #23272b !important;
+    color: #e0e0e0 !important;
+}
+body.dark-mode .table {
+    color: #e0e0e0 !important;
+}
+body.dark-mode .table thead {
+    background-color: #23272b !important;
+}
+body.dark-mode .btn-primary {
+    background-color: #375a7f !important;
+    border-color: #375a7f !important;
+}
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+    background-color: #23272b !important;
+    color: #e0e0e0 !important;
+    border-color: #444 !important;
+}
+body.dark-mode .dropdown-menu {
+    background-color: #23272b !important;
+    color: #e0e0e0 !important;
+}
+body.dark-mode .dropdown-item {
+    color: #e0e0e0 !important;
+}
+body.dark-mode .dropdown-item:hover {
+    background-color: #181a1b !important;
+}
+body.dark-mode {
+    background-color: #181a1b !important;
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .card,
+body.dark-mode .navbar,
+body.dark-mode .bg-white,
+body.dark-mode .shadow-sm,
+body.dark-mode .border-bottom {
+    background-color: #23272b !important;
+    color: #e0e0e0 !important;
+    border-color: #23272b !important;
+}
+
+body.dark-mode .navbar .nav-link,
+body.dark-mode .navbar .navbar-brand,
+body.dark-mode .navbar .dropdown-toggle,
+body.dark-mode .navbar .dropdown-item {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .navbar .nav-link.active,
+body.dark-mode .navbar .nav-link:hover,
+body.dark-mode .navbar .dropdown-item:hover {
+    color: #ffd700 !important;
+    background-color: #181a1b !important;
+}
+
+body.dark-mode .dropdown-menu {
+    background-color: #23272b !important;
+    color: #e0e0e0 !important;
+    border-color: #444 !important;
+}
+
+body.dark-mode .dropdown-item {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .dropdown-item:hover,
+body.dark-mode .dropdown-item:focus {
+    background-color: #181a1b !important;
+    color: #ffd700 !important;
+}
+
+body.dark-mode .table {
+    color: #e0e0e0 !important;
+    background-color: #23272b !important;
+}
+
+body.dark-mode .table thead {
+    background-color: #23272b !important;
+    color: #ffd700 !important;
+}
+
+body.dark-mode .table-bordered > :not(caption) > * > * {
+    border-color: #444 !important;
+}
+
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+    background-color: #23272b !important;
+    color: #e0e0e0 !important;
+    border-color: #444 !important;
+}
+
+body.dark-mode .form-control:focus,
+body.dark-mode .form-select:focus {
+    background-color: #23272b !important;
+    color: #fff !important;
+    border-color: #ffd700 !important;
+    box-shadow: 0 0 0 0.2rem rgba(255,215,0,.25);
+}
+
+body.dark-mode .btn-primary,
+body.dark-mode .btn-success,
+body.dark-mode .btn-danger,
+body.dark-mode .btn-secondary {
+    color: #fff !important;
+    border: none;
+}
+
+body.dark-mode .btn-primary {
+    background-color: #375a7f !important;
+}
+
+body.dark-mode .btn-success {
+    background-color: #218838 !important;
+}
+
+body.dark-mode .btn-danger {
+    background-color: #c82333 !important;
+}
+
+body.dark-mode .btn-secondary {
+    background-color: #444 !important;
+}
+
+body.dark-mode .btn-outline-secondary {
+    color: #e0e0e0 !important;
+    border-color: #888 !important;
+    background: transparent !important;
+}
+
+body.dark-mode .btn-outline-secondary:hover {
+    background-color: #444 !important;
+    color: #ffd700 !important;
+    border-color: #ffd700 !important;
+}
+
+body.dark-mode .badge.bg-warning {
+    color: #23272b !important;
+}
+
+body.dark-mode .badge.bg-info {
+    color: #23272b !important;
+}
+
+body.dark-mode .badge.bg-success {
+    color: #fff !important;
+}
+
+body.dark-mode .text-muted {
+    color: #b0b0b0 !important;
+}
+
+body.dark-mode .progress {
+    background-color: #444 !important;
+}
+
+body.dark-mode .progress-bar {
+    background-color: #ffd700 !important;
+    color: #23272b !important;
+}
+.dashboard-title {
+    color: #212529; /* Bootstrap default dark */
+    transition: color 0.2s;
+}
+body.dark-mode .dashboard-title {
+    color: #e0e0e0 !important;
+}

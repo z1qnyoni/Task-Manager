@@ -11,7 +11,6 @@
                 </li>
             @endauth
         </ul>
-
         
         <ul class="navbar-nav d-flex align-items-center">
             @auth
@@ -48,6 +47,11 @@
                     </a>
                 </li>
             @endauth
+            <li class="nav-item">
+            <button id="theme-toggle" class="btn btn-sm btn-outline-secondary ms-2" type="button">
+        <i class="bi bi-moon"></i>
+            </button>
+            </li>
         </ul>
 
     </div>

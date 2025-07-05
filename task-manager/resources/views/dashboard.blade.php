@@ -2,8 +2,8 @@
 
 @section('header')
     <div class="d-flex justify-content-between align-items-center">
-        <h2 class="fs-4 fw-bold text-dark d-flex align-items-center mb-0">
-            <i class="bi bi-speedometer2 me-2 text-primary"></i> Dashboard
+        <h2 class="fs-4 fw-bold d-flex align-items-center dashboard-title">
+    <i class="bi bi-speedometer2 me-2 text-primary"></i> Dashboard
         </h2>
         <div class="d-flex align-items-center">
             <span class="text-muted me-3">Welcome, {{ Auth::user()->name }}!</span>
