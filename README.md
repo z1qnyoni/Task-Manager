@@ -55,7 +55,6 @@ php artisan migrate
 (Optional) Start the local development server:
 
 bash
-Копировать
 php artisan serve
 The app will be available at http://127.0.0.1:8000
 
