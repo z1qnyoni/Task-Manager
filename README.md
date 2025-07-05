@@ -86,7 +86,8 @@ Manage your tasks with ease: registration, authentication, CRUD operations, dash
 
 ## 🖥️ Screenshots
 
-_Add your UI screenshots here!_
+![image](https://github.com/user-attachments/assets/b2f05253-9ce4-4891-aa0a-804e62a7556d)
+
 
 ---
 
