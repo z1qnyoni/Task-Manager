@@ -10,12 +10,21 @@ use Carbon\Carbon;
 class TaskController extends Controller
 {
     // Display a list of the user's tasks
-    public function index()
-    {
-        $tasks = Task::where('user_id', Auth::id())->latest()->get();
-        return view('tasks.index', compact('tasks'));
+    public function index(Request $request)
+{
+    $query = Task::where('user_id', Auth::id());
+
+    if ($request->filled('status')) {
+        $query->where('status', $request->status);
+    }
+    if ($request->filled('search')) {
+        $query->where('title', 'like', '%' . $request->search . '%');
     }
 
+    $tasks = $query->latest()->get();
+
+    return view('tasks.index', compact('tasks'));
+}
     // Show the form for creating a new task
     public function create()
     {
@@ -81,4 +90,23 @@ public function update(Request $request, Task $task)
         $task->delete();
         return redirect()->route('tasks.index')->with('success', 'Task deleted successfully!');
     }
+    public function updateStatus(Request $request, Task $task)
+    {
+        $this->authorize('update', $task);
+    
+        $request->validate([
+            'status' => 'required|in:jauns,procesā,pabeigts',
+        ]);
+    
+        $task->update(['status' => $request->status]);
+    
+        return back()->with('success', 'Task status updated!');
+    }
+
 }
+
+
+
+
+
+

@@ -175,3 +175,10 @@ body.dark-mode .progress-bar {
 body.dark-mode .dashboard-title {
     color: #e0e0e0 !important;
 }
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+.card, .navbar, .bg-white, .shadow-sm, .border-bottom {
+    transition: background-color 0.3s, color 0.3s;
+}
