@@ -15,7 +15,7 @@ return new class extends Migration
         $table->id();
         $table->string('title');
         $table->date('deadline');
-        $table->enum('status', ['jauns', 'procesā', 'pabeigts'])->default('jauns');
+        $table->enum('status', ['jauns', 'procesā', 'Pabeigts'])->default('jauns');
         $table->foreignId('user_id')->constrained()->onDelete('cascade');
         $table->timestamps();
     });

@@ -20,9 +20,9 @@
         <div class="mb-3">
             <label for="status" class="form-label">Status</label>
             <select name="status" id="status" class="form-select" required>
-                <option value="jauns" {{ old('status') == 'jauns' ? 'selected' : '' }}>New</option>
-                <option value="procesā" {{ old('status') == 'procesā' ? 'selected' : '' }}>In Progress</option>
-                <option value="pabeigts" {{ old('status') == 'pabeigts' ? 'selected' : '' }}>Completed</option>
+                <option value="jauns" {{ old('status') == 'jauns' ? 'selected' : '' }}>Jauns</option>
+                <option value="procesā" {{ old('status') == 'procesā' ? 'selected' : '' }}>Procesā</option>
+                <option value="Pabeigts" {{ old('status') == 'Pabeigts' ? 'selected' : '' }}>Pabeigts</option>
             </select>
         </div>
 

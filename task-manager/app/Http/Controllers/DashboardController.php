@@ -10,7 +10,21 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        $tasks = Task::where('user_id', Auth::id())->latest()->get();
-        return view('dashboard', compact('tasks'));
+        $user = auth()->user();
+        $tasks = $user->tasks()->get();
+        
+        
+       
+        $stats = [
+            'new' => $tasks->where('status', 'jauns')->count(),
+            'in_progress' => $tasks->where('status', 'procesā')->count(),
+            'completed' => $tasks->where('status', 'pabeigts')->count(),
+            'total' => $tasks->count(),
+        ];
+        $stats['completion_rate'] = $stats['total'] > 0
+            ? round($stats['completed'] / $stats['total'] * 100)
+            : 0;
+
+        return view('dashboard', compact('stats'));
     }
 }

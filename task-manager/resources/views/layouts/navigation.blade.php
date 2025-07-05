@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm px-4">
     <div class="container-fluid d-flex justify-content-between align-items-center">
 
-        {{-- Левый блок: Dashboard --}}
+        
         <ul class="navbar-nav d-flex align-items-center">
             @auth
                 <li class="nav-item">
@@ -12,7 +12,7 @@
             @endauth
         </ul>
 
-        {{-- Правый блок: имя пользователя / логин / регистрация --}}
+        
         <ul class="navbar-nav d-flex align-items-center">
             @auth
                 <li class="nav-item dropdown">

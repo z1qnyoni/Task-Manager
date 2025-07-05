@@ -28,7 +28,7 @@ class TaskController extends Controller
     $request->validate([
         'title' => 'required|string|max:255',
         'deadline' => 'required|date',
-        'status' => 'required|in:jauns,procesā,pabeigts',
+        'status' => 'required|in:jauns,procesā,Pabeigts',
     ]);
 
     // Convert to correct format
@@ -58,7 +58,7 @@ public function update(Request $request, Task $task)
     $request->validate([
         'title' => 'required|string|max:255',
         'deadline' => 'required|date_format:d/m/Y',
-        'status' => 'required|in:jauns,procesā,pabeigts',
+        'status' => 'required|in:jauns,procesā,Pabeigts',
     ]);
 
     

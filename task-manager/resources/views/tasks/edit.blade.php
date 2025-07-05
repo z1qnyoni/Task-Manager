@@ -23,7 +23,7 @@
             <select id="status" name="status" class="form-select" required>
                 <option value="jauns" {{ $task->status == 'jauns' ? 'selected' : '' }}>Jauns</option>
                 <option value="procesā" {{ $task->status == 'procesā' ? 'selected' : '' }}>Procesā</option>
-                <option value="pabeigts" {{ $task->status == 'pabeigts' ? 'selected' : '' }}>Pabeigts</option>
+                <option value="Pabeigts" {{ $task->status == 'Pabeigts' ? 'selected' : '' }}>Pabeigts</option>
             </select>
         </div>
 
